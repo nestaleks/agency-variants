@@ -1,0 +1,101 @@
+/******** страница услуги ********/
+
+.services__title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services-page__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.services-page__item{
+    background-color: var(--main-white);
+    color: var(--main-black);
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.services-page__item:hover{
+    background-color: #ffffffe1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+.services-page__item-img{
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.services-page__item:hover .services-page__item-img{
+    transform: scale(1.1);
+}
+.services-page__item-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+.services-page__item:hover .services-page__item-title{
+    color: var(--main-blue, #237385);
+}
+.services-page__item-text{
+    line-height: 1.2;
+    text-align: justify;
+}
+
+/******* АДАПТИВ*******/
+@media(max-width: 1024px) {
+    .services-page__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .services-page__item-text {
+        text-align: left;
+    }
+}
+
+@media(max-width: 560px) {
+    .services-page__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services-page__item{
+        padding: 25px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .services__item{
+        padding: 20px;
+        border-radius: 15px;
+        margin: 0 10px 0 10px;
+        height: 210px;
+    }
+    .services__item-title{
+        font-size: 18px;
+    }
+    .services__item-text{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 360px) {
+    .services__item{
+        padding: 15px;
+        border-radius: 10px;
+        margin: 0 10px 0 10px;
+        height: 230px;
+    }
+    .services__item-title{
+        font-size: 16px;
+    }
+    .services__item-text{
+        font-size: 14px;
+    }
+}

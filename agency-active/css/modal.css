@@ -1,0 +1,301 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+/* Делаем карточки кликабельными */
+[data-modal-trigger] {
+    cursor: pointer;
+}
+
+.modal.active {
+    display: flex !important; /* Принудительно показываем модальное окно */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modal__content {
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #333;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__close::before {
+    content: "×";
+}
+
+.modal__close:hover {
+    opacity: 1;
+}
+
+.modal__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.modal__image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+/* Анимация появления */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal.active .modal__content {
+    animation: modalFadeIn 0.3s ease forwards;
+}
+
+/* Запрет прокрутки body при открытом модальном окне */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Magnific Popup styles */
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: 0.8;
+}
+
+.mfp-wrap {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mfp-container {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.mfp-content {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+}
+
+.mfp-figure {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+}
+
+.mfp-img {
+    max-width: 90vw !important;
+    max-height: 85vh !important;
+    height: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Стрелки навигации - полное переопределение */
+.mfp-container .mfp-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 50% !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 10046 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0.8 !important;
+    transition: all 0.3s ease !important;
+    overflow: visible !important;
+}
+
+.mfp-container .mfp-arrow:hover {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    transform: translateY(-50%) scale(1.05) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.mfp-container .mfp-arrow:before,
+.mfp-container .mfp-arrow:after {
+    content: none !important;
+    display: none !important;
+    border: none !important;
+}
+
+.mfp-container .mfp-arrow-left {
+    left: 20px !important;
+    right: auto !important;
+    background-image: url('../images/arrow-prev.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 24px 24px !important;
+    filter: invert(1) brightness(1.5) !important;
+    transition: all 0.3s ease !important;
+}
+
+.mfp-container .mfp-arrow-left:hover {
+    background-size: 26px 26px !important;
+}
+
+.mfp-container .mfp-arrow-left:before,
+.mfp-container .mfp-arrow-left:after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+}
+
+.mfp-container .mfp-arrow-right {
+    right: 20px !important;
+    left: auto !important;
+    background-image: url('../images/arrow-next.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 24px 24px !important;
+    filter: invert(1) brightness(1.5) !important;
+    transition: all 0.3s ease !important;
+}
+
+.mfp-container .mfp-arrow-right:hover {
+    background-size: 26px 26px !important;
+}
+
+.mfp-container .mfp-arrow-right:before,
+.mfp-container .mfp-arrow-right:after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+}
+
+/* Prevent horizontal scrolling */
+.mfp-wrap {
+    overflow-x: hidden;
+}
+
+.mfp-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.mfp-figure:after {
+    display: none !important;
+}
+
+/* Mobile responsive styles for arrows */
+@media screen and (max-width: 768px) {
+    .mfp-container .mfp-arrow {
+        width: 50px !important;
+        height: 50px !important;
+        background-size: 20px 20px !important;
+    }
+    
+    .mfp-container .mfp-arrow-left {
+        left: 15px !important;
+        background-size: 20px 20px !important;
+    }
+    
+    .mfp-container .mfp-arrow-left:hover {
+        background-size: 22px 22px !important;
+    }
+    
+    .mfp-container .mfp-arrow-right {
+        right: 15px !important;
+        background-size: 20px 20px !important;
+    }
+    
+    .mfp-container .mfp-arrow-right:hover {
+        background-size: 22px 22px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mfp-container .mfp-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        background-size: 18px 18px !important;
+    }
+    
+    .mfp-container .mfp-arrow-left {
+        left: 10px !important;
+        background-size: 18px 18px !important;
+    }
+    
+    .mfp-container .mfp-arrow-left:hover {
+        background-size: 20px 20px !important;
+    }
+    
+    .mfp-container .mfp-arrow-right {
+        right: 10px !important;
+        background-size: 18px 18px !important;
+    }
+    
+    .mfp-container .mfp-arrow-right:hover {
+        background-size: 20px 20px !important;
+    }
+}

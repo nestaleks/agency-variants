@@ -1,0 +1,152 @@
+/* General styles */
+:root{
+    --main-white: #ffffff;
+    --main-black: #000000;
+    --main-tangerine: #FF8A63;
+    --main-blue: #237385;
+    --gray-background: #f0f0f0;
+    --details-background: #f3f3f3;
+    --listings-grey: #6F7278FF;
+    --header-color: #237385B2;
+    --header-text: #ffffff;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+          box-sizing: inherit; 
+        
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+html,
+body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-black);
+    font-size: 16px;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    /*font-family: "Jost", sans-serif;*/
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+ul {
+    list-style: none;
+}
+button {
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section__padding{
+    padding: 60px 0;
+}
+.pretitle{
+    color: var(--main-tangerine);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.page__title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section__title{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 11px;
+    color: var(--main-blue);
+}
+
+#upBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+/******* АДАПТИВ*******/
+@media(max-width: 1024px) {
+    .section__padding{
+        padding: 40px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .pretitle{
+        text-align: center;
+    }
+}
+
+@media(max-width: 560px) {
+    .section__padding{
+        padding: 30px 0;
+    }
+    .section__title{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    #upBtn {
+        display: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 480px) {
+    .page__title{
+        font-size: 40px;
+    }
+    .section__title{
+        text-align: center;
+    }
+}
+
+@media(max-width: 360px) {
+    .section__title{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .page__title{
+        font-size: 35px;
+    }
+}
