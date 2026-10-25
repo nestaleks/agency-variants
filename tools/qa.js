@@ -3,7 +3,7 @@
 //         NODE_PATH=<global node_modules> node tools/qa.js [routes...] [--shots] [--previews]
 // Checks per route × viewport: console errors, page errors, failed requests (4xx/5xx, network), horizontal overflow.
 // --shots     full-page screenshots into tools/qa-output/
-// --previews  1440×900 viewport JPEGs into agency-active/design-concepts/previews/ (gallery thumbnails)
+// --previews  1440×900 viewport JPEGs into previews/ (gallery thumbnails)
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
@@ -13,7 +13,7 @@ const args = process.argv.slice(2);
 const shots = args.includes('--shots');
 const previews = args.includes('--previews');
 let routes = args.filter(a => !a.startsWith('--')).map(r => '/' + r.replace(/^\/+/, ''));
-if (!routes.length) routes = ['/design-concepts/', ...'abcdefghijklm'.split('').map(c => `/design-concepts/concept-${c}/`)];
+if (!routes.length) routes = ['/', ...'abcdefghijklm'.split('').map(c => `/concept-${c}/`)];
 const VIEWPORTS = [
   { name: 'mobile', width: 390, height: 844 },
   { name: 'tablet', width: 768, height: 1024 },
@@ -21,7 +21,7 @@ const VIEWPORTS = [
   { name: 'desktop', width: 1920, height: 1080 }
 ];
 const OUT = path.join(__dirname, 'qa-output');
-const PREV = path.join(__dirname, '..', 'agency-active', 'design-concepts', 'previews');
+const PREV = path.join(__dirname, '..', 'previews');
 fs.mkdirSync(OUT, { recursive: true });
 fs.mkdirSync(PREV, { recursive: true });
 

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-concept="g">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TID group — We build in Mallorca since 2018 · Concept G</title>
+  <meta name="description" content="TID group selects the plot, designs, builds and delivers residential buildings in Palma and Port de Sóller. Five buildings, 37 homes. Since 2018.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hd" data-hd>
+    <a class="hd__logo" href="#top" aria-label="TID group — back to top"><span class="logo" aria-hidden="true"></span></a>
+    <p class="hd__tag" aria-hidden="true"><span class="dot"></span>Site office · Palma</p>
+    <button class="hd__menu" type="button" aria-expanded="false" aria-controls="nav" data-menu><span class="burger" aria-hidden="true"></span><span data-menu-label>Menu</span></button>
+    <nav class="hd__nav" id="nav" aria-label="Main" data-nav>
+      <a href="#projects"><span aria-hidden="true">01</span>Projects</a>
+      <a href="#process"><span aria-hidden="true">02</span>Process</a>
+      <a href="#services"><span aria-hidden="true">03</span>Services</a>
+      <a href="#investment"><span aria-hidden="true">04</span>Investment</a>
+      <a href="#contact" class="btn btn--y btn--sm">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO / SITE BOARD -->
+    <section class="hero" id="top" aria-labelledby="hero-h">
+      <div class="hero__copy">
+        <p class="label"><span class="label__k">Obra</span> Spanish for “building site” · Promotor: TID group</p>
+        <h1 class="hero__h" id="hero-h"><span class="hero__word" aria-hidden="true">Obra</span><span class="hero__line">We build in Mallorca since 2018</span></h1>
+        <p class="hero__lead">We select the plot, design, build and deliver residential buildings in Palma and Port de Sóller — and stay with you after the keys. Experience that builds comfort.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--y" href="#projects">See the 5 buildings</a>
+          <a class="btn btn--o" href="#contact" data-interest="General enquiry">Talk to the builder</a>
+        </div>
+      </div>
+
+      <aside class="board" aria-labelledby="board-h">
+        <div class="board__head">
+          <h2 class="board__h" id="board-h">Site board</h2>
+          <p class="board__meta">Top Invest Development Group SL<br>Palma de Mallorca</p>
+        </div>
+        <ol class="board__list" data-board></ol>
+        <p class="board__foot"><span>Homes on the board</span><b data-board-total>37</b></p>
+      </aside>
+
+      <figure class="hero__fig">
+        <img src="../images/top__img.jpg" alt="Aerial view of S’Olivar: a white three-storey building with a stone-clad façade, tiled roof and pool among pines, with the bay of Port de Sóller behind" width="1920" height="1080" fetchpriority="high">
+        <figcaption><span class="tag">Completed</span> S’Olivar, Port de Sóller — 7 apartments, private pool</figcaption>
+      </figure>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" data-ticker>
+      <button class="ticker__btn" type="button" aria-pressed="false" data-ticker-btn><span class="ticker__ico" aria-hidden="true"></span><span class="sr">Pause the project ticker</span></button>
+      <div class="ticker__viewport">
+        <ul class="ticker__track" data-ticker-track aria-label="Projects and locations"></ul>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <section class="sec projects" id="projects" aria-labelledby="projects-h">
+      <header class="sh">
+        <p class="sh__n">01</p>
+        <h2 class="sh__h" id="projects-h">5 buildings.<br>37 homes.</h2>
+        <p class="sh__p">Each project is a spec sheet: location, figures, amenities — and the full table of apartments with every floor plan. Prices on request.</p>
+      </header>
+      <div class="filters" role="group" aria-label="Filter projects by status">
+        <button type="button" class="chip" aria-pressed="true" data-filter="all">All <span data-count="all"></span></button>
+        <button type="button" class="chip" aria-pressed="false" data-filter="in-progress">In progress <span data-count="in-progress"></span></button>
+        <button type="button" class="chip" aria-pressed="false" data-filter="sold">Sold <span data-count="sold"></span></button>
+      </div>
+      <div class="sheets" data-sheets></div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sec process" id="process" aria-labelledby="process-h">
+      <header class="sh sh--inv">
+        <p class="sh__n">02</p>
+        <h2 class="sh__h" id="process-h">From the plot to the keys.</h2>
+        <p class="sh__p">One company responsible for every phase — from the search for the plot to legal support and rental management after the sale.</p>
+      </header>
+      <ol class="phases" data-phases></ol>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="sec services" id="services" aria-labelledby="services-h">
+      <header class="sh">
+        <p class="sh__n">03</p>
+        <h2 class="sh__h" id="services-h">12 services.<br>One contractor.</h2>
+        <p class="sh__p">Simple solutions to complex problems — whether you build, buy, sell or invest.</p>
+      </header>
+      <ul class="sgrid" data-services></ul>
+    </section>
+
+    <!-- INVESTMENT -->
+    <section class="sec invest" id="investment" aria-labelledby="inv-h">
+      <div class="invest__grid">
+        <header class="sh sh--stack">
+          <p class="sh__n">04</p>
+          <h2 class="sh__h" id="inv-h">Invest with the people who build it.</h2>
+          <p class="sh__p">Real estate in Spain remains one of the prime options for placing capital. What decides the value of a home is checked on site, not on paper.</p>
+        </header>
+        <div class="check">
+          <p class="check__h">What we check before you invest</p>
+          <ul class="check__list">
+            <li>Location</li>
+            <li>A thoughtful design concept</li>
+            <li>Quality of infrastructure</li>
+            <li>Attractive shared spaces</li>
+            <li>Efficient management after sale</li>
+          </ul>
+          <p class="check__h">What you get</p>
+          <ul class="check__list check__list--plus">
+            <li>Selection of promising properties and market analysis</li>
+            <li>A turnkey investment plan after a personal consultation</li>
+            <li>Rental arranged for you — even if you live in another city or country</li>
+          </ul>
+          <a class="btn btn--y" href="#contact" data-interest="Investment consultation">Book an investment consultation</a>
+        </div>
+        <figure class="invest__fig">
+          <img src="../images/projects/foners-club/foners-club-gallery-01.jpg" alt="Foners Club: street façade with stone-panelled balconies above two ground-floor commercial premises" width="1920" height="1080" loading="lazy">
+          <figcaption><span class="tag tag--y">In progress</span> Foners Club — homes above commercial premises</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec contact" id="contact" aria-labelledby="contact-h">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <header class="sh sh--stack">
+            <p class="sh__n">05</p>
+            <h2 class="sh__h" id="contact-h">Talk to the site office.</h2>
+            <p class="sh__p">Tell us about the home, plot or investment you have in mind. We reply by email or phone.</p>
+          </header>
+          <dl class="spec">
+            <div><dt>Promoter</dt><dd>Top Invest Development Group SL</dd></div>
+            <div><dt>Office</dt><dd>Palma de Mallorca, Spain</dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+34658058102">+34 658 058 102</a><br><a href="tel:+34662685172">+34 662 685 172</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:office@tidgroup.es">office@tidgroup.es</a><br><a href="mailto:info@tidgroup.es">info@tidgroup.es</a><br><a href="mailto:pmallorca@tidgroup.es">pmallorca@tidgroup.es</a></dd></div>
+          </dl>
+        </div>
+
+        <form class="form" data-tid-form novalidate>
+          <p class="form__head"><span>Enquiry form</span><span aria-hidden="true">TID-01</span></p>
+          <div class="f"><label for="name">Name <abbr title="required">*</abbr></label><input id="name" name="name" autocomplete="name" required><p class="err" id="name-error" hidden></p></div>
+          <div class="f"><label for="email">Email <abbr title="required">*</abbr></label><input id="email" name="email" type="email" autocomplete="email" required><p class="err" id="email-error" hidden></p></div>
+          <div class="f"><label for="phone">Phone <span class="opt">optional</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[+]?[0-9 ()-]{6,20}"><p class="err" id="phone-error" hidden></p></div>
+          <div class="f"><label for="interest">I’m interested in</label>
+            <select id="interest" name="interest" data-project-select>
+              <option value="General enquiry">General enquiry</option>
+              <option value="Investment consultation">Investment consultation</option>
+              <option value="Selling my property">Selling my property</option>
+              <option value="Custom construction">Custom construction</option>
+            </select></div>
+          <div class="f f--full"><label for="message">Message <span class="opt">optional</span></label><textarea id="message" name="message" rows="4"></textarea></div>
+          <div class="f f--full f--check"><input id="consent" name="consent" type="checkbox" required><label for="consent">I agree that TID group may contact me about this enquiry.</label><p class="err" id="consent-error" hidden></p></div>
+          <div class="f--full form__foot"><button class="btn btn--k" type="submit">Send enquiry</button><p class="form__status" data-form-status role="status" aria-live="polite"></p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="ft__tape" aria-hidden="true"></div>
+    <div class="ft__grid">
+      <div class="ft__brand">
+        <span class="logo" role="img" aria-label="TID group"></span>
+        <p lang="es">Experiencia que construye confort</p>
+      </div>
+      <div>
+        <p class="ft__k">Call</p>
+        <p><a href="tel:+34658058102">+34 658 058 102</a><br><a href="tel:+34662685172">+34 662 685 172</a></p>
+      </div>
+      <div>
+        <p class="ft__k">Write</p>
+        <p><a href="mailto:office@tidgroup.es">office@tidgroup.es</a><br><a href="mailto:info@tidgroup.es">info@tidgroup.es</a><br><a href="mailto:pmallorca@tidgroup.es">pmallorca@tidgroup.es</a></p>
+      </div>
+      <div>
+        <p class="ft__k">Office</p>
+        <p>Palma de Mallorca, Spain</p>
+        <p class="ft__k">Partners</p>
+        <p><a href="https://www.blanciblanc.com/" target="_blank" rel="noopener">Blanc i Blanc</a> · <a href="https://rbkprime.com/" target="_blank" rel="noopener">RBK Prime</a></p>
+      </div>
+    </div>
+    <p class="ft__base"><span>© <span data-year>2026</span> Top Invest Development Group SL</span><span>tidgroup.es</span></p>
+  </footer>
+
+  <!-- PLAN VIEWER -->
+  <dialog class="pv" data-pv aria-labelledby="pv-title">
+    <div class="pv__bar">
+      <div class="pv__id">
+        <p class="pv__proj" data-pv-proj></p>
+        <h2 class="pv__title" id="pv-title" data-pv-title>Floor plan</h2>
+      </div>
+      <button class="pv__close" type="button" data-pv-close aria-label="Close plan viewer"><span aria-hidden="true">×</span></button>
+    </div>
+    <dl class="pv__spec" data-pv-spec></dl>
+    <div class="pv__stage" data-pv-stage tabindex="0" aria-label="Floor plan — use plus and minus to zoom, arrow keys to move">
+      <img class="pv__img" data-pv-img alt="" draggable="false">
+    </div>
+    <div class="pv__tools">
+      <div class="pv__zoom" role="group" aria-label="Zoom">
+        <button type="button" data-pv-zoom="-1" aria-label="Zoom out"><span aria-hidden="true">−</span></button>
+        <output class="pv__lvl" data-pv-lvl aria-live="polite">100%</output>
+        <button type="button" data-pv-zoom="1" aria-label="Zoom in"><span aria-hidden="true">+</span></button>
+        <button type="button" data-pv-reset class="pv__fit">Fit</button>
+      </div>
+      <p class="pv__hint">Drag to pan · <kbd>+</kbd> <kbd>−</kbd> zoom · <kbd>←</kbd> <kbd>→</kbd> unit</p>
+      <div class="pv__nav">
+        <button type="button" data-pv-step="-1"><span aria-hidden="true">←</span> Prev</button>
+        <span class="pv__count" data-pv-count></span>
+        <button type="button" data-pv-step="1">Next <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <a class="btn btn--y pv__cta" href="#contact" data-pv-cta>Request this home</a>
+  </dialog>
+
+  <script src="../shared/data.js"></script>
+  <script src="../shared/form.js"></script>
+  <script src="script.js"></script>
+  <script src="../shared/switcher.js"></script>
+</body>
+</html>

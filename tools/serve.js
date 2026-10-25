@@ -1,10 +1,10 @@
-// Zero-dependency static server for agency-active/.
-// Usage: node tools/serve.js [port]   →   http://localhost:8080/design-concepts/
+// Zero-dependency static server for the repo root (design concepts gallery).
+// Usage: node tools/serve.js [port]   →   http://localhost:8080/
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, '..', 'agency-active');
+const ROOT = path.resolve(__dirname, '..');
 const PORT = Number(process.argv[2] || process.env.PORT || 8080);
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
@@ -27,4 +27,4 @@ http.createServer((req, res) => {
       res.end(buf);
     });
   });
-}).listen(PORT, () => console.log(`Serving ${ROOT} at http://localhost:${PORT}/design-concepts/`));
+}).listen(PORT, () => console.log(`Serving ${ROOT} at http://localhost:${PORT}/`));

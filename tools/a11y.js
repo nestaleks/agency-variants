@@ -1,7 +1,7 @@
 // Lightweight accessibility scan (not a substitute for axe/manual testing):
 // missing alt, unnamed buttons/links, heading-level skips, duplicate ids, inputs without labels, missing lang.
 const { chromium } = require('playwright');
-const BASE = process.env.BASE || 'http://localhost:8080/design-concepts/';
+const BASE = process.env.BASE || 'http://localhost:8080/';
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1366, height: 800 } });
   let total = 0;
@@ -25,7 +25,7 @@ const BASE = process.env.BASE || 'http://localhost:8080/design-concepts/';
       });
       return out;
     });
-    console.log((res.length ? '✗ ' : '✓ ') + '/design-concepts/' + r + (res.length ? '\n   ' + res.join('\n   ') : ''));
+    console.log((res.length ? '✗ ' : '✓ ') + '/' + r + (res.length ? '\n   ' + res.join('\n   ') : ''));
     total += res.length;
   }
   await b.close(); console.log(total ? `${total} finding(s)` : 'No findings'); process.exit(total ? 1 : 0);

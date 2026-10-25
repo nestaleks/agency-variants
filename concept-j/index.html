@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-concept="j">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TID group — Find your home in Mallorca in 3 questions · Concept J</title>
+  <meta name="description" content="TID group builds small residential buildings in Palma and Port de Sóller. Answer three simple questions and see the homes that fit you.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@1,7..72,400;1,7..72,500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top" data-top>
+    <div class="top__bar">
+      <a class="top__logo" href="#top" aria-label="TID group — back to top"><span class="logo" aria-hidden="true"></span></a>
+      <button class="top__menu" type="button" aria-expanded="false" aria-controls="nav" data-menu>
+        <span class="burger" aria-hidden="true"><i></i><i></i></span><span data-menu-label>Menu</span>
+      </button>
+      <nav class="top__nav" id="nav" aria-label="Main" data-nav>
+        <a href="#match">Find a match</a>
+        <a href="#homes">Homes</a>
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#invest">Investing</a>
+        <a href="#write" class="top__cta">Write to us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO — bento -->
+    <section class="hero" id="top" aria-labelledby="hero-h">
+      <div class="bento">
+        <div class="tile tile--head" data-tile>
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>Homes in Mallorca, explained simply</p>
+          <h1 id="hero-h">Find your home in Mallorca in <em>3&nbsp;questions.</em></h1>
+          <p class="lede">We design and build small residential buildings in Palma and Port de Sóller. Tell us where, how many bedrooms and one must-have — we’ll show you the real homes that fit.</p>
+          <div class="actions">
+            <a class="btn btn--navy" href="#match" data-start>Start the 3 questions <span class="btn__arr" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#homes">Browse every home</a>
+          </div>
+        </div>
+
+        <figure class="tile tile--photo tile--p1" data-tile>
+          <img src="../images/projects/marina-residence/marina-residence-gallery-01.jpg" alt="Marina Residence: a stone-clad building with glass balconies and a rooftop terrace, a short walk from the beach and the bay" width="1920" height="1080" fetchpriority="high">
+          <figcaption class="tag">Marina Residence<span class="tag__x"> · 30 m to the beach</span></figcaption>
+        </figure>
+
+        <div class="tile tile--sky tile--since" data-tile>
+          <p class="big"><span class="big__n">2018</span></p>
+          <p class="tile__t">Building in Mallorca since 2018 — <em>more than 7 years</em> from plot to keys.</p>
+        </div>
+
+        <div class="tile tile--peach tile--count" data-tile>
+          <p class="count"><span class="count__n" data-count-buildings>5</span> <span class="count__l">buildings</span></p>
+          <p class="count"><span class="count__n" data-count-homes>37</span> <span class="count__l">published homes</span></p>
+          <p class="tile__t tile__t--sm">Every one of them is in the quiz below.</p>
+        </div>
+
+        <figure class="tile tile--photo tile--p2" data-tile>
+          <img src="../images/projects/solivar/solivar-gallery-02.jpg" alt="S’Olivar in Port de Sóller: a three-storey building with glass balconies behind a garden pool and sun loungers" width="1920" height="1080" loading="lazy">
+          <figcaption class="tag">S’Olivar<span class="tag__x"> · Port de Sóller</span> · Sold</figcaption>
+        </figure>
+
+        <div class="tile tile--navy tile--cta" data-tile>
+          <p class="tile__q">Rather talk to a person?</p>
+          <p class="tile__t">Call us or drop a line — no pressure, no jargon.</p>
+          <div class="actions actions--tight">
+            <a class="btn btn--light" href="tel:+34658058102">+34 658 058 102</a>
+            <a class="btn btn--outline-light" href="#write">Write to us</a>
+          </div>
+        </div>
+
+        <figure class="tile tile--photo tile--p3" data-tile>
+          <img src="../images/mallorca__img.jpg" alt="The harbour of Port de Sóller: sailing boats in turquoise water in front of the town and green hills" width="1280" height="853" loading="lazy">
+          <figcaption class="tag">Port de Sóller<span class="tag__x"> harbour</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="match" id="match" aria-labelledby="match-h">
+      <div class="match__card">
+        <div class="match__side">
+          <p class="eyebrow">Home match</p>
+          <h2 id="match-h">Three questions. <em>Real homes.</em></h2>
+          <p class="match__intro">No sign-up, no filters to learn. Pick one answer per step — you can go back any time.</p>
+          <ol class="progress" aria-label="Quiz progress" data-progress>
+            <li aria-current="step"><span class="progress__n">1</span><span class="progress__l">Where</span></li>
+            <li><span class="progress__n">2</span><span class="progress__l">Bedrooms</span></li>
+            <li><span class="progress__n">3</span><span class="progress__l">Must-have</span></li>
+          </ol>
+          <div class="progress__bar" aria-hidden="true"><span data-progress-bar></span></div>
+        </div>
+
+        <div class="match__main">
+          <form class="quiz" data-quiz novalidate>
+            <fieldset class="step" data-step="0">
+              <legend class="step__q" tabindex="-1"><span class="step__k">Step 1 of 3</span> Where would you like to live?</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="where" value="city"><span class="opt__box"><span class="ico ico--city" aria-hidden="true"></span><span class="opt__t">Palma city</span><span class="opt__s">Neighbourhoods close to the old town</span></span></label>
+                <label class="opt"><input type="radio" name="where" value="sea"><span class="opt__box"><span class="ico ico--sea" aria-hidden="true"></span><span class="opt__t">By the sea</span><span class="opt__s">Walk to the beach</span></span></label>
+                <label class="opt"><input type="radio" name="where" value="soller"><span class="opt__box"><span class="ico ico--port" aria-hidden="true"></span><span class="opt__t">Port de Sóller</span><span class="opt__s">A quiet port in the north-west</span></span></label>
+                <label class="opt"><input type="radio" name="where" value="any"><span class="opt__box"><span class="ico ico--any" aria-hidden="true"></span><span class="opt__t">Anywhere</span><span class="opt__s">Show me everything</span></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="1" hidden>
+              <legend class="step__q" tabindex="-1"><span class="step__k">Step 2 of 3</span> How many bedrooms do you need?</legend>
+              <div class="opts opts--3">
+                <label class="opt opt--num"><input type="radio" name="beds" value="1"><span class="opt__box"><span class="opt__n">1</span><span class="opt__t">bedroom</span></span></label>
+                <label class="opt opt--num"><input type="radio" name="beds" value="2"><span class="opt__box"><span class="opt__n">2</span><span class="opt__t">bedrooms</span></span></label>
+                <label class="opt opt--num"><input type="radio" name="beds" value="3"><span class="opt__box"><span class="opt__n">3+</span><span class="opt__t">bedrooms</span></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="2" hidden>
+              <legend class="step__q" tabindex="-1"><span class="step__k">Step 3 of 3</span> One thing you can’t live without?</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="must" value="pool"><span class="opt__box"><span class="ico ico--pool" aria-hidden="true"></span><span class="opt__t">A pool</span><span class="opt__s">In the building</span></span></label>
+                <label class="opt"><input type="radio" name="must" value="outdoor"><span class="opt__box"><span class="ico ico--sun" aria-hidden="true"></span><span class="opt__t">Terrace or garden</span><span class="opt__s">Your own outdoor space</span></span></label>
+                <label class="opt"><input type="radio" name="must" value="parking"><span class="opt__box"><span class="ico ico--car" aria-hidden="true"></span><span class="opt__t">Parking</span><span class="opt__s">A place for the car</span></span></label>
+                <label class="opt"><input type="radio" name="must" value="none"><span class="opt__box"><span class="ico ico--any" aria-hidden="true"></span><span class="opt__t">No preference</span><span class="opt__s">Surprise me</span></span></label>
+              </div>
+            </fieldset>
+
+            <p class="quiz__hint" data-hint hidden>Pick one answer to continue.</p>
+            <div class="quiz__nav">
+              <button class="btn btn--ghost" type="button" data-back hidden><span aria-hidden="true">←</span> Back</button>
+              <button class="btn btn--navy" type="submit" data-next>Next <span class="btn__arr" aria-hidden="true">→</span></button>
+            </div>
+          </form>
+
+          <div class="results" data-results hidden>
+            <div class="results__head">
+              <h3 id="results-h" tabindex="-1" data-results-h>Your matches</h3>
+              <p class="results__sum" data-results-sum></p>
+              <button class="btn btn--ghost btn--sm" type="button" data-restart>Change my answers</button>
+            </div>
+            <p class="results__note" data-results-note hidden></p>
+            <ol class="rlist" data-rlist aria-labelledby="results-h"></ol>
+            <button class="btn btn--ghost" type="button" data-more hidden>Show all matches</button>
+          </div>
+          <p class="sr-only" role="status" aria-live="polite" data-quiz-live></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="homes" id="homes" aria-labelledby="homes-h">
+      <header class="sec-h">
+        <p class="eyebrow">Our buildings</p>
+        <h2 id="homes-h">Five buildings, <em>every home listed.</em></h2>
+        <p class="sec-h__p">Three are being built now, two are finished and sold. Open any card to see its homes, one by one.</p>
+      </header>
+      <div class="pgrid" data-pgrid></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="services-h">
+      <header class="sec-h">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-h">Need help with something else? <em>We probably do that.</em></h2>
+      </header>
+      <div class="chips" role="group" aria-label="Filter services" data-sfilter>
+        <button type="button" class="chip" aria-pressed="true" data-group="all">All <span class="chip__n" data-n="all"></span></button>
+        <button type="button" class="chip" aria-pressed="false" data-group="Build">Build <span class="chip__n" data-n="Build"></span></button>
+        <button type="button" class="chip" aria-pressed="false" data-group="Buy &amp; sell">Buy &amp; sell <span class="chip__n" data-n="Buy &amp; sell"></span></button>
+        <button type="button" class="chip" aria-pressed="false" data-group="Advise">Advise <span class="chip__n" data-n="Advise"></span></button>
+      </div>
+      <p class="sr-only" role="status" aria-live="polite" data-slive></p>
+      <ul class="sgrid" data-sgrid></ul>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="how" id="how" aria-labelledby="how-h">
+      <header class="sec-h">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-h">From an empty plot to your keys, <em>in four steps.</em></h2>
+      </header>
+      <div class="stepper">
+        <div class="stepper__track" role="tablist" aria-label="Our process" data-tabs></div>
+        <div class="stepper__panels" data-panels></div>
+      </div>
+    </section>
+
+    <!-- INVESTMENT -->
+    <section class="invest" id="invest" aria-labelledby="invest-h">
+      <div class="invest__intro">
+        <p class="eyebrow eyebrow--light">Buying to invest?</p>
+        <h2 id="invest-h">The plain-language <em>version.</em></h2>
+        <p>Real estate is generally regarded as a relatively stable, long-term way to protect and grow capital. Here is what we look at — and what we do for you.</p>
+        <a class="btn btn--light" href="#write" data-interest="Investment consultation">Book an investment chat <span class="btn__arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="faq" data-faq>
+        <div class="faq__item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-b">What decides the value of a home here?<span class="faq__ic" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-1" role="region" aria-labelledby="faq-1-b" hidden>
+            <p>Five things, mostly. We weigh all of them before we buy a plot:</p>
+            <ul class="faq__five">
+              <li><b>Location</b></li>
+              <li><b>A thoughtful design concept</b></li>
+              <li><b>Quality of infrastructure</b></li>
+              <li><b>Attractive shared spaces</b></li>
+              <li><b>Efficient management</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-b">How do we start?<span class="faq__ic" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-2" role="region" aria-labelledby="faq-2-b" hidden>
+            <p>With a personal consultation with market experts. Afterwards you get a turnkey investment plan — including the selection of promising properties and an analysis of the market.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-b">I live abroad. Can I still rent it out?<span class="faq__ic" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-3" role="region" aria-labelledby="faq-3-b" hidden>
+            <p>Yes. We take care of renting out the property. If you live in another city or country, it can run without your direct involvement.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-b">Will you help with the paperwork?<span class="faq__ic" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-4" role="region" aria-labelledby="faq-4-b" hidden>
+            <p>Yes — legal support for buying, selling and leasing, and support at every stage, from selecting the property to closing the deal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="write" id="write" aria-labelledby="write-h">
+      <header class="sec-h">
+        <p class="eyebrow">Write to us</p>
+        <h2 id="write-h">Ask anything. <em>Really, anything.</em></h2>
+        <p class="sec-h__p">Tell us a little about what you’re looking for. Your email app opens with the message ready to send.</p>
+      </header>
+      <div class="write__grid">
+        <form class="form" data-tid-form novalidate>
+          <div class="f"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required><p class="err" id="name-error" hidden></p></div>
+          <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><p class="err" id="email-error" hidden></p></div>
+          <div class="f"><label for="phone">Phone <span class="opt-l">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[+]?[0-9 ()-]{6,20}"><p class="err" id="phone-error" hidden></p></div>
+          <div class="f"><label for="interest">What is it about?</label>
+            <select id="interest" name="interest" data-project-select>
+              <option value="General enquiry">General enquiry</option>
+              <option value="Investment consultation">Investment consultation</option>
+              <option value="Selling my property">Selling my property</option>
+              <option value="Custom construction">Custom construction</option>
+            </select></div>
+          <div class="f f--full"><label for="message">Message <span class="opt-l">(optional)</span></label><textarea id="message" name="message" rows="4"></textarea></div>
+          <div class="f f--full f--check"><input id="consent" name="consent" type="checkbox" required><label for="consent">It’s fine for TID group to contact me about this message.</label><p class="err" id="consent-error" hidden></p></div>
+          <div class="f--full form__foot"><button class="btn btn--navy" type="submit">Send message <span class="btn__arr" aria-hidden="true">→</span></button><p class="form__status" data-form-status role="status" aria-live="polite"></p></div>
+        </form>
+
+        <div class="cbento">
+          <div class="ctile ctile--sky">
+            <h3>Call</h3>
+            <p><a href="tel:+34658058102">+34 658 058 102</a></p>
+            <p><a href="tel:+34662685172">+34 662 685 172</a></p>
+          </div>
+          <div class="ctile ctile--mint">
+            <h3>Email</h3>
+            <p><a href="mailto:office@tidgroup.es">office@tidgroup.es</a></p>
+            <p><a href="mailto:info@tidgroup.es">info@tidgroup.es</a></p>
+            <p><a href="mailto:pmallorca@tidgroup.es">pmallorca@tidgroup.es</a></p>
+          </div>
+          <div class="ctile ctile--peach">
+            <h3>Office</h3>
+            <address>Top Invest Development Group SL<br>Palma de Mallorca, Spain</address>
+          </div>
+          <div class="ctile ctile--white">
+            <h3>Partners</h3>
+            <p><a href="https://www.blanciblanc.com/" target="_blank" rel="noopener">Blanc i Blanc <span class="sr-only">(opens in a new tab)</span></a></p>
+            <p><a href="https://rbkprime.com/" target="_blank" rel="noopener">RBK Prime <span class="sr-only">(opens in a new tab)</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__in">
+      <div class="foot__brand">
+        <span class="logo logo--light" role="img" aria-label="TID group"></span>
+        <p class="foot__tag"><em>Experiencia que construye confort.</em></p>
+        <p class="foot__small">Experience that builds comfort — since 2018.</p>
+      </div>
+      <div class="foot__col">
+        <p class="foot__k">Contact</p>
+        <p><a href="tel:+34658058102">+34 658 058 102</a><br><a href="tel:+34662685172">+34 662 685 172</a></p>
+        <p><a href="mailto:office@tidgroup.es">office@tidgroup.es</a><br><a href="mailto:info@tidgroup.es">info@tidgroup.es</a></p>
+      </div>
+      <div class="foot__col">
+        <p class="foot__k">Where</p>
+        <p>Palma de Mallorca, Spain</p>
+        <p class="foot__k">Partners</p>
+        <p><a href="https://www.blanciblanc.com/" target="_blank" rel="noopener">Blanc i Blanc</a> · <a href="https://rbkprime.com/" target="_blank" rel="noopener">RBK Prime</a></p>
+      </div>
+    </div>
+    <p class="foot__legal">© <span data-year>2026</span> Top Invest Development Group SL · tidgroup.es</p>
+  </footer>
+
+  <script src="../shared/data.js"></script>
+  <script src="../shared/form.js"></script>
+  <script src="script.js"></script>
+  <script src="../shared/switcher.js"></script>
+</body>
+</html>
